@@ -438,16 +438,16 @@ local function teleportToPlayer()
         if targetRoot and localRoot then
             localRoot.CFrame = targetRoot.CFrame
             WindUI:Notify({
-                Title = "Телепортация",
-                Content = "Успешно телепортирован к "..teleportTarget.Name,
+                Title = "Тeleport",
+                Content = "nananana"..teleportTarget.Name,
                 Icon = "check-circle",
                 Duration = 3
             })
         end
     else
         WindUI:Notify({
-            Title = "Ошибка",
-            Content = "Цель не найдена или недоступна",
+            Title = "Teleport",
+            Content = "yes",
             Icon = "x-circle",
             Duration = 3
         })
@@ -519,24 +519,24 @@ Tabs.TeleportTab:Button({
                 if targetRoot and localRoot then
                     localRoot.CFrame = targetRoot.CFrame
                     WindUI:Notify({
-                        Title = "Телепортация",
-                        Content = "Успешно телепортирован к убийце "..Murder,
+                        Title = "Тeleport",
+                        Content = "Teleported to Murder "..Murder,
                         Icon = "check-circle",
                         Duration = 3
                     })
                 end
             else
                 WindUI:Notify({
-                    Title = "Ошибка",
-                    Content = "Убийца не найден или недоступен",
+                    Title = "Teleport",
+                    Content = "idk",
                     Icon = "x-circle",
                     Duration = 3
                 })
             end
         else
             WindUI:Notify({
-                Title = "Ошибка",
-                Content = "Убийца не определен в текущем матче",
+                Title = "teleport",
+                Content = "Ready go",
                 Icon = "x-circle",
                 Duration = 3
             })
@@ -1059,8 +1059,8 @@ local function SmartShoot()
     
     -- Визуальное подтверждение
     WindUI:Notify({
-        Title = success and "Успех" or "Ошибка",
-        Content = success and "Атака на "..murderer.Name.." выполнена!" or "Не удалось атаковать",
+        Title = success and "True" or "Russe",
+        Content = success and "ha "..murderer.Name.." true!" or "nah,",
         Icon = success and "check-circle" or "x-circle"
     })
 end
