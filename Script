@@ -1236,13 +1236,13 @@ Tabs.SettingsTab:Toggle({
             SetupAutoInject()
             WindUI:Notify({
                 Title = "Auto Inject",
-                Content = "Автоинжект включен! Скрипт перезапустится автоматически.",
+                Content = "script cant inject please reload your game",
                 Duration = 3
             })
         else
             WindUI:Notify({
                 Title = "Auto Inject",
-                Content = "Автоинжект отключен",
+                Content = "Injected succesfully",
                 Duration = 3
             })
         end
@@ -1291,7 +1291,7 @@ Tabs.SettingsTab:Button({
             loadstring(game:HttpGet(AutoInject.ScriptURL))()
             WindUI:Notify({
                 Title = "Manual Inject",
-                Content = "Скрипт успешно перезагружен!",
+                Content = "Injected succesfully!",
                 Duration = 3
             })
         end)
@@ -1300,29 +1300,29 @@ Tabs.SettingsTab:Button({
 
 -- Socials
 Tabs.SocialsTab:Paragraph({
-    Title = gradient("SnowT", Color3.fromHex("#001e80"), Color3.fromHex("#16f2d9")),
-    Desc = "My socials",
+    Title = gradient("Kxrma", Color3.fromHex("#001e80"), Color3.fromHex("#16f2d9")),
+    Desc = "My discord channel",
     Image = "bird",
     Color = "White",
     Buttons = {
         { Icon = "circle",
-          Title = "TG Channel",
+          Title = "my discord",
           Callback = function()
-              SetClipboard("t.me/supreme_scripts") end,
+              SetClipboard("https://discord.gg/j6rPU57tBk") end,
         }
     }
 })
 
 Tabs.SocialsTab:Paragraph({
-    Title = gradient("Mirrozz", Color3.fromHex("#ffffff"), Color3.fromHex("#363636")),
-    Desc = "Socials My Friend",
+    Title = gradient("discord acc", Color3.fromHex("#ffffff"), Color3.fromHex("#363636")),
+    Desc = "My discord acc",
     Image = "bird",
     Color = "White",
     Buttons = {
         {
-            Title = "TG Channel",
+            Title = "discord acc",
             Icon = "circle",
-            Callback = function() SetClipboard("t.me/mirrozzscript")
+            Callback = function() SetClipboard("koro0080")
     end,
         }
     }
@@ -1354,7 +1354,7 @@ Tabs.ChangelogsTab:Code({
     • TP to Lobby
     • Kill sheriff function
     • Fix bugs
-   The date of update: 17.05.2025!
+   The date of update: 17.11.2025!
 ]]
 })
 
@@ -1643,8 +1643,8 @@ Tabs.CreateThemeTab:Button({
         })
         WindUI:SetTheme(currentThemeName)
         WindUI:Notify({
-            Title = "Тема обновлена",
-            Content = "Новая тема '"..currentThemeName.."' применена!",
+            Title = "Still working on it",
+            Content = "soon '"..currentThemeName.."' soon",
             Duration = 3,
             Icon = "check-circle"
         })
